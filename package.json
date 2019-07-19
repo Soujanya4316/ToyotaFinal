@@ -1,0 +1,45 @@
+{
+  "name": "testcafe-cucumber",
+  "version": "0.1.0",
+  "description": "An integration of TestCafe and CucumberJS",
+  "author": "Ryan Quellhorst <rquellh@gmail.com>",
+  "contributors": [
+    "Chirag Masekar"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rquellh/testcafe-cucumber"
+  },
+  "scripts": {
+    "debug": "node --inspect=1337 --debug-brk --nolazy node_modules/cucumber/bin/cucumber-js --tags @debug --format json:./reports/report.json",
+    "testrun": "./node_modules/.bin/cucumber-js.cmd --tags @test --format json:./reports/report.json",
+    "test-all": "./node_modules/.bin/cucumber-js.cmd --tags @toyota --format json:./reports/report.json",
+    "test-accessories": "./node_modules/.bin/cucumber-js.cmd --tags @accessories --format json:./reports/report.json",
+    "test-finddealer": "./node_modules/.bin/cucumber-js.cmd --tags @finddealer --format json:./reports/report.json",
+    "test-pricing": "./node_modules/.bin/cucumber-js.cmd --tags @pricing --format json:./reports/report.json",
+    "test-range": "./node_modules/.bin/cucumber-js.cmd --tags @range --format json:./reports/report.json",
+    "test-forms": "./node_modules/.bin/cucumber-js.cmd --tags @forms --format json:./reports/report.json",
+    "test-news": "./node_modules/.bin/cucumber-js.cmd --tags @news --format json:./reports/report.json",
+    "reports": "node ./support/generate_reports_v2.js",
+    "reports-teamcity": "node ./support/generate_reports_v3.js",
+    "reports-v1": "node ./support/generate_reports_v1.js"
+  },
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "cucumber": "^5.1.0",
+    "cucumber-json-to-teamcity": "^0.3.0",
+    "eslint": "^4.19.1",
+    "npm": "^6.0.0",
+    "testcafe": "^1.1.0",
+    "testcafe-reporter-cucumber-json": "^1.0.1",
+    "testcafe-reporter-teamcity": "^1.0.10",
+    "xpath-to-css": "^1.0.3"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^4.0.5",
+    "eslint-config-google": "^0.9.1",
+    "multiple-cucumber-html-reporter": "^1.11.6",
+    "testcafe-browser-provider-browserstack": "^1.8.0"
+  }
+}
