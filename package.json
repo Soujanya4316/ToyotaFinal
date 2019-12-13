@@ -30,7 +30,7 @@
     "cucumber": "^5.1.0",
     "cucumber-json-to-teamcity": "^0.3.0",
     "eslint": "^4.19.1",
-    "npm": "^6.0.0",
+    "npm": "^6.13.4",
     "testcafe": "^1.1.0",
     "testcafe-reporter-cucumber-json": "^1.0.1",
     "testcafe-reporter-teamcity": "^1.0.10",
